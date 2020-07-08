@@ -1,0 +1,17 @@
+mixin box(image, title, content)
+    article.post-container
+        img(src="../img/"+image)
+        h4=title
+        p=content
+        a.articles-button(href="top-5.html") Leer más
+
+mixin principalNew(title, content)
+    .articles-news-info-container
+        h2=title
+        p=content
+        a.articles-button(href="top-5") Leer más
+
+mixin top5(image, title, content)
+    h4=title
+    img(src="../image/"+image)
+    p=content

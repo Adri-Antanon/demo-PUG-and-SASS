@@ -1,0 +1,11 @@
+main
+    section(class="grid-container top5-img-container")
+        img(src="../img/top5", alt="top 5")
+    section.top5-main-container
+        .grid-container
+            h3 Opinión personal
+            article
+                h1 Informáticos más influyentes
+                p lista informáticos
+                each i in news
+                    +top5("hola",i,lorem)
