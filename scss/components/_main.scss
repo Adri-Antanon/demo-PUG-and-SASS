@@ -1,0 +1,43 @@
+.grid-container{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.index-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .index-main{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        height: 100%;
+        background-image: url('../img/fondo-index.png');
+        section{
+            display: grid;
+            grid-column: 2;
+            justify-items: center;
+            height: 350px;
+            margin-top: 80px;
+        }
+        &-text{
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 7px;
+            text-align: center;
+            color: $Color-muy-claro;
+        }
+        &-button{
+            width: 110px;
+            height: 50px;
+            background-color: $Color-primario;
+            display: grid;
+            align-items: center;
+            a{
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+    }
+}
