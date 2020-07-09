@@ -6,6 +6,6 @@ main
             h3 Opinión personal
             article
                 h1 Informáticos más influyentes
-                p lista informáticos
-                each i in news
-                    +top5("hola",i,lorem)
+                p Mentes más influyentes de nuestra época
+                each i in [0, 1, 2, 3, 4]
+                    +top5(photos[i],people[i],infoPeople[i])
