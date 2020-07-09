@@ -41,3 +41,111 @@
         }
     }
 }
+.articles-main{
+    display: grid;
+    .articles-news-container{
+        background-color: $Color-claro;
+        padding: 0 50px 40px;
+        .articles-main-new{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 2fr;
+            .articles-news-img-container{
+                grid-column: 1;
+                img{
+                    width: 75%;
+                }
+            }
+            .articles-news-info-container{
+                grid-column: 2;
+                text-align: justify;
+                p{
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+    .articles-posts-container{
+        padding: 0 50px 40px;
+        h3{
+            border-bottom: $Color-secundario 2px solid;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .post-container{
+            display: inline-block;
+            padding-left: 10px;
+            max-width: 470px;
+            margin-bottom: 50px;
+            p{
+                margin-bottom: 35px;
+                text-align: justify;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .articles-button{
+        padding:10px 15px;
+        border: $Color-secundario 1px solid;
+        font-size: 12px;
+    }
+}
+
+.top5-img-container{
+    padding: 0 50px 40px;
+    img{
+        width: 90%;
+    }
+}
+.top5-main-container{
+    padding: 0 50px 40px;
+    h3{
+        border-bottom: $Color-variacion 1px solid;
+        padding-bottom: 20px;
+    }
+    article{
+        h1{
+            font-size: 35px;
+        }
+        img{
+            width: 50;
+        }    
+    }   
+}
+
+.aboutUs-main-container{
+    padding:70px 40px;
+    background-color: $Color-claro;
+    margin-bottom: 50px;
+    .aboutUs-container{
+        display: flex;
+        img{
+            width: 320px;
+            margin-right: 30px;
+        }
+        div{
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.aboutUs-main-projects{
+    padding: 0 50px 40px;
+    h3{
+        border-bottom: 1px solid $Color-secundario;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+    .project-main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .project-container{
+            padding: 0 8px;
+            text-align: justify;
+        }
+    }
+}
